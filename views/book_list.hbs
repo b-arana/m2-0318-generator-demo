@@ -1,0 +1,18 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+<ul>
+{{#each books}}
+    <li>
+        <a href="/book/{{this._id}}">{{ this.title }}</a>
+        - 
+        <a href="/book/{{this._id}}/edit">Edit this book</a>
+        -
+        <a href="/book/{{this._id}}/delete">Delete this book</a>
+    </h1>
+{{else}}
+    <p class="empty">No content</p>
+{{/each}}
+</ul>
+
+<a href="/book/new">Add new Book</a>
+<a href="/">Go back to HOME</a>

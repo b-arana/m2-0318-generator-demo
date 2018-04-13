@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+<ul>
+{{#with book}}
+    <h1>{{title}}. By {{author.name}} {{author.lastName}}</h1>
+    <p>{{description}}</p>
+{{/with}}
+
+
+<a href="/book">Go back to list</a>
